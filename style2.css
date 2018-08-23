@@ -439,7 +439,7 @@ body {
     background-color: #fff2f4;
     background-image: url("background.png");
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 1400px auto;
     margin: 0px;
     padding: 0px;
 }
@@ -558,7 +558,7 @@ a:hover {
 /* biscuits */
 
 .thumbnail {
-    max-width: 120px;
+    max-width: 105px;
 }
 
 .box {
