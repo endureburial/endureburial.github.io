@@ -1,0 +1,122 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Digest This&excl; </title>
+<link href="style2.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/png" href="digestive.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<base href="file:///C:/Users/Emma/Documents/Work/biscuit%20website/biscuits.html">
+</head>
+
+<script language="JavaScript">
+    
+    var links = new Array(11) 
+    links[0] = "love_ya.html" 
+    links[1] = "ginger_snaps.html" 
+    links[2] = "pink_panther.html" 
+    links[3] = "rich_tea.html" 
+    links[4] = "ginger_nut.html" 
+    links[5] = "jammie_dodger.html" 
+    links[6] = "malted_milk.html" 
+    links[7] = "bourbon.html" 
+    links[8] = "nice.html" 
+    links[9] = "custard_cream.html"
+    links [10] = "hobnob.html" 
+    function go() { 
+    var a = 1+Math.round(Math.random()*11) 
+    var i = a 
+    location = links[i] 
+    } 
+    // -- End Hiding Here -->
+    
+</script>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html">
+                <h1>Digest This!</h1>
+                <img src="steam-01.png" class="steam"/>
+                <img src="cup.svg" class="cup"/>
+            </a>
+        </div>
+        <div class="nav" id="myTopnav">
+            <ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="dropdown">
+                <a href="index.html">
+                    <img src="circle.svg" class="circle1"/>
+                    <img src="circle.svg" class="circle2"/>
+                    <img src="circle.svg" class="circle3"/>
+                    <li>HOME</li>
+                </a>
+                <a href="biscuits.html">
+                    <img src="circle.svg" class="circle1"/>
+                    <img src="circle.svg" class="circle2"/>
+                    <img src="circle.svg" class="circle3"/>
+                    <li>BISCUITS</li>
+                </a>
+                <a href="about.html">
+                    <img src="circle.svg" class="circle1"/>
+                    <img src="circle.svg" class="circle2"/>
+                    <img src="circle.svg" class="circle3"/>
+                    <li>ABOUT</li>
+                </a>
+                <a href="contact.html">
+                    <img src="circle.svg" class="circle1"/>
+                    <img src="circle.svg" class="circle2"/>
+                    <img src="circle.svg" class="circle3"/>
+                    <li>CONTACT</li>
+                </a>
+                </div>
+                <a href="javascript:go()" id="random">
+                    <li class="button">RANDOM</li>
+                </a>
+            </ul>
+        </div>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "nav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "nav";
+                }
+            }
+        </script>
+
+        <div class="space"></div>
+
+        <div class="review">
+            <h2>Jammie Dodgers</h2>
+            <img src="jammie-dodger.png" class="description" id="small">
+            <p>
+                    How unbearably adorable! <i>Mon coeur, mon chou</i>… my love and devotion eternal! I love you. I love you and so, if you let me, I will for one delicious moment dissolve into a small puddle. I shall deliquesce in this very spot so that you might scoop me up from the ground and carry me with you in a flask on your belt.
+            </p>
+            <p2>    
+                    I shall swallow 4 cups of sugar and boil until I become strawberry jam. I shall pour myself into your core; I am a little heart shape on your torso. I am a passenger that sits with you always. I am content. <i>Non dire una parole che non sia d’amore.</i> I am yours.
+            </p2>
+            <br/>
+            <p3>
+                <a href="biscuits.html" title="Back to the Biscuit Tin">
+                    &#171;
+                </a>
+                <div class="next">
+                    <a href="ginger-nut.html">&#8592;</a>
+                    <a href="malted-milk.html">&#8594;</a>
+                </div>
+            </p3>
+        </div>
+
+        <footer class="footer"></footer>
+    
+    </div>
+
+</body>
+
+</html>

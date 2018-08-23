@@ -1,0 +1,102 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Digest This&excl; </title>
+<link href="style2.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/png" href="digestive.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<base href="file:///C:/Users/Emma/Documents/Work/biscuit%20website/random.html">
+</head>
+
+<script language="JavaScript">
+    
+    var links = new Array(1) 
+    links[0] = "love-ya.html"
+    links[1] = "ginger-snaps.html"
+    links[2] = "love-ya.html"  
+    function go() { 
+    var a = 1+Math.round(Math.random()*1) 
+    var i = a 
+    location = links[i]
+    } 
+    // -- End Hiding Here -->
+    
+</script>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html">
+                <h1>Digest This!</h1>
+                <img src="steam-01.png" class="steam"/>
+                <img src="cup.svg" class="cup"/>
+            </a>
+        </div>
+        <div class="nav" id="myTopnav">
+            <ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="dropdown">
+                <a href="index.html">
+                    <img src="circle.svg" class="circle1"/>
+                    <img src="circle.svg" class="circle2"/>
+                    <img src="circle.svg" class="circle3"/>
+                    <li>HOME</li>
+                </a>
+                <a href="biscuits.html">
+                    <img src="circle.svg" class="circle1"/>
+                    <img src="circle.svg" class="circle2"/>
+                    <img src="circle.svg" class="circle3"/>
+                    <li>BISCUITS</li>
+                </a>
+                <a href="about.html">
+                    <img src="circle.svg" class="circle1"/>
+                    <img src="circle.svg" class="circle2"/>
+                    <img src="circle.svg" class="circle3"/>
+                    <li>ABOUT</li>
+                </a>
+                <a href="contact.html">
+                    <img src="circle.svg" class="circle1"/>
+                    <img src="circle.svg" class="circle2"/>
+                    <img src="circle.svg" class="circle3"/>
+                    <li>CONTACT</li>
+                </a>
+                </div>
+                <a href="javascript:go()" id="random">
+                    <li class="button">RANDOM</li>
+                </a>
+            </ul>
+        </div>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "nav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "nav";
+                }
+            }
+        </script>
+
+        <div class="space"></div>
+
+        <div class="review">
+            <h2>About</h2>
+            <p>
+                Hello user! Hello world! <i>Bienvenue</i> my darlings, I’m so happy you could make it. Sit down, make yourself at home. I’ll make us some bitter tea and soil sandwiches. Step into the living room – take off your shoes, mind! How do those cushions feel? Like you’re sinking, you say? Do you feel like you will ever stop sinking? Delightful, aren’t they. I got them from the Sunday flea market. They call them quicksand cushions. Absolutely inspired.
+            </p>
+            <p2>    
+                Now, keep still. Don’t struggle. You’re completely alone. But, of course, you didn’t need me to tell you that. I’m so happy you could make it. I’ll bring us some biscuits, shall I? Something sweet to ease the strife. Something to distract ourselves from the agony, the ugliness of the physical world. Soon we’ll escape. For now, let’s have a digestive. I’m so happy you could make it.
+            </p2>
+        </div>
+
+        <footer class="footer"></footer>
+    
+    </div>
+
+</body>
+
+</html>

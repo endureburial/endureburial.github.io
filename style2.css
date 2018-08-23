@@ -1,0 +1,803 @@
+@media only screen and (min-width: 830px) {
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff2f4;
+    background-image: url("background.png");
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 10% 2% 83% 5%;
+    grid-template-rows: repeat(6, lfr);
+}
+
+.header {
+    padding: 20px;
+    grid-area: 1 / 1 / span 1 / span 4;
+    line-height: 0.5;
+    width: 100%;
+    overflow: hidden;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "Harlow Plain Regular";
+    font-size: 4.5rem;
+    float: left;
+}
+
+.icon {
+    display: none;
+}
+
+.nav {
+    float: left;
+    padding: 20px;
+    overflow: hidden;
+    grid-area: 2 / 1 / span 5 / span 1;
+}
+
+.nav ul {
+    grid-area: 2 / 1 / span 5 / span 3;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+a:link, a:visited, a:active {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    font-family: "Roboto Bold";
+}
+
+a:hover {
+    color: palevioletred;
+    transition: 0.5s;
+}
+
+.nav li {
+    text-align: center;
+    padding: 10px;
+    font-family: "Roboto Bold";
+    font-size: 1.4vw;
+}
+
+.button {
+    background-color:white;
+    opacity: 0.5;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 1vw !important;
+}
+
+.button:hover {
+    opacity: 1;
+    transition: 1s;
+}
+
+.footer {
+    padding: 15px;
+    grid-row-start: 3;
+    width: 100%;
+    grid-column-start: 1;
+}
+
+/* header animation*/
+
+.cup {
+    max-width: 90px;
+    position: absolute;
+    right: 0;
+    top: 11%;
+    opacity: 0;
+}
+
+.steam {
+    max-width: 90px;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+}
+
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes steam {
+    0% {opacity: 0;}
+    25% {opacity: 0.7;}
+    50% {opacity: 1;}
+    75% {opacity: 0.5;}
+    100% {opacity: 0;}
+}
+
+
+.header a:hover .cup {
+    animation: appear 1s forwards;
+}
+
+.header a:hover .steam {
+    animation: steam 2s infinite;
+    animation-delay: 1s;
+}
+
+/* nav animation */
+
+.circle1 {
+    max-width: 0.5vw;
+    position: absolute;
+    display: block;
+   
+}
+
+.circle2 {
+    max-width: 0.7vw;
+    position: absolute;
+    display: block;
+}
+
+.circle3 {
+    max-width: 1vw;
+    position: absolute;
+    display: block;
+}
+
+.circle1, .circle2, .circle3 {
+    opacity: 0;
+}
+
+.nav a:hover .circle1 {
+    animation: bubble 1s;
+}
+
+.nav a:hover .circle2 {
+    animation: bubble 1s 0.2s;
+}
+
+.nav a:hover .circle3 {
+    animation: bubble 1s 0.4s;
+}
+
+@keyframes bubble {
+    0% {opacity: 0; transform: scale(0.3, 0.3); transform: translateX(45px);}
+    25% {opacity: 0.7; transform: scale(0.6, 0.6); transform: translate(55px, -15px);}
+    50% {opacity: 1; transform: scale(0.9, 0.9);}
+    100% {opacity: 0; transform: scale(1, 1); transform: translate(40px, -30px);}
+}
+
+/* biscuits */
+
+.thumbnail {
+    max-width: 140px;
+}
+
+.box {
+    grid-column-start: 3;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 35px;
+    gap: 50px 0px;
+    opacity: 0.9;
+}
+
+a.tip span {
+    position: absolute;
+    display: none;
+    white-space: nowrap;
+    font-family: "Harlow Solid Regular";
+}
+
+a.tip:hover span { 
+    display: block;
+    position: absolute;
+    z-index: 1000;
+}
+
+/* review page */
+
+.review {
+    grid-column-start: 3;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    background-color: white;
+    opacity: 0.9;
+}
+
+h2 {
+    font-family: "Harlow Solid Regular";
+    font-size: 3rem;
+    padding-left: 20px;
+}
+
+p, p2 {
+    font-family: "Roboto Regular";
+    font-size: 1.2rem;
+}
+
+.description {
+    max-width: 250px;
+    float: left;
+}
+
+#small {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+p3 {
+    font-size: 3rem;
+}
+.next {
+    float: right;
+    font-size: 3rem;
+}
+
+.back {
+    float: left;
+    font-family: "Harlow Solid Regular";
+}
+
+.backtip {
+    font-size: 1.2rem;
+}
+
+
+@font-face {
+    font-family: "Harlow Plain Regular";
+    src: url(Harlow\ Plain\ Regular.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url(Roboto-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url(Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Harlow Solid Regular";
+    src: url(Harlow\ Solid\ Regular.ttf) format("truetype");
+}
+
+/* love ya */
+
+
+.heart {
+    grid-column-start: 3;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 35px;
+    gap: 50px 0px;
+    opacity: 0.9;
+}
+
+.jammie {
+    max-width: 60px;
+    opacity: 0;
+}
+
+#one {
+    grid-row-start: 1;
+    grid-column-start: 4;
+    animation: scale 1s forwards;
+    animation-delay: 4s;
+}
+
+#two {
+    grid-row-start: 1;
+    grid-column-start: 6;
+    animation: scale 1s forwards;
+    animation-delay: 4s;
+}
+
+#three {
+    grid-row-start: 2;
+    grid-column-start: 3;
+    animation: scale 1s forwards;
+    animation-delay: 5s;
+}
+
+#four {
+    grid-row-start: 2;
+    grid-column-start: 5;
+    animation: scale 1s forwards;
+    animation-delay: 3s;
+}
+
+#five {
+    grid-row-start: 2;
+    grid-column-start: 7;
+    animation: scale 1s forwards;
+    animation-delay: 5s;
+}
+
+#six {
+    grid-row-start: 3;
+    grid-column-start: 3;
+    animation: scale 1s forwards;
+    animation-delay: 5s;
+}
+
+#seven {
+    grid-row-start: 3;
+    grid-column-start: 7;
+    animation: scale 1s forwards;
+    animation-delay: 5s;
+}
+
+#eight {
+    grid-row-start: 4;
+    grid-column-start: 4;
+    animation: scale 1s forwards;
+    animation-delay: 4s;
+}
+
+#nine {
+    grid-row-start: 4;
+    grid-column-start: 6;
+    animation: scale 1s forwards;
+    animation-delay: 4s;
+}
+
+#ten {
+    grid-row-start: 5;
+    grid-column-start: 5;
+    animation: scale 1s forwards;
+    animation-delay: 3s;
+}
+
+@keyframes scale{
+    0% {opacity: 1; transform: scale(0,0) rotate(0deg);}
+    100% { opacity: 1; transform: scale(1,1) rotate(720deg);}
+}
+
+/* ginger snaps */
+
+.woof {
+    max-width: 50px;
+    grid-column-start: 2;
+    padding-bottom: 70px;
+    justify-self: end;
+    opacity: 0;
+    animation: steam 3s infinite;
+    animation-delay: 7s;
+}
+
+.ginge {
+    max-width: 200px;
+    grid-column-start: 3;
+    opacity: 0;
+    animation: hello 0.7s forwards;
+    animation-delay: 5s;
+}
+
+.speech {
+    grid-column-start: 4;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1em;
+    padding-top: 100px;
+    opacity: 0;
+    animation: appear 1s forwards;
+    animation-delay: 9s
+}
+
+@keyframes hello{
+    0% {opacity: 1; transform: scale(0,1);}
+    70% {opacity: 1; transform: scale(1.15,1);}
+    100% {opacity: 1; transform: scale(1,1)}
+}
+
+/* contact */
+
+.telephone {
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+}
+
+/* mobile */
+
+@media only screen and (max-width: 830px) {
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff2f4;
+    background-image: url("background.png");
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 7% 86% 7%;
+    grid-template-rows: repeat(6, lfr);
+}
+
+.header {
+    padding: 20px;
+    grid-area: 1 / 1 / span 1 / span 4;
+    line-height: 0.1;
+    width: 100%;
+    overflow: hidden;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "Harlow Plain Regular";
+    font-size: 3.7rem;
+    text-align: center;
+}
+
+.nav {
+    grid-area: 2 / 1 / span 1 / span 3;
+    opacity: 0.9;
+}
+
+.nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: auto;
+}
+
+a:link, a:visited, a:active {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    font-family: "Roboto Bold";
+}
+
+a:hover {
+    color: palevioletred;
+    transition: 0.5s;
+}
+
+.icon {
+    display: block;
+    font-size: 1.6rem;
+    background-color: #ffe5ed;
+    width: 90%;
+}
+
+.nav li {
+    display: none;
+    text-align: center;
+    font-family: "Roboto Bold";
+    font-size: 1.6rem;
+    background-color: #ffe5ed;
+    width: 100%;
+}
+
+.dropdown {
+    width: 90%;
+}
+
+.nav.responsive {
+    position: relative;
+}
+
+.nav.responsive li {
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    float: left;
+}
+
+#random {
+    display: none;
+}
+
+.space {
+    grid-row-start: 3;
+    padding: 5px;
+}
+
+.footer {
+    padding: 15px;
+    grid-row-start: 5;
+    width: 100%;
+    grid-column-start: 1;
+}
+
+/* header animation*/
+
+.cup {
+    display: none;
+}
+
+.steam {
+    display: none;
+}
+
+/* nav animation */
+
+.circle1, .circle2, .circle3 {
+    display: none;
+}
+
+/* biscuits */
+
+.thumbnail {
+    max-width: 120px;
+}
+
+.box {
+    grid-column-start: 2;
+    grid-row-start: 4;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 35px;
+    gap: 50px 0px;
+    opacity: 0.9;
+}
+
+a.tip span {
+    position: absolute;
+    display: none;
+    white-space: nowrap;
+    font-family: "Harlow Solid Regular";
+}
+
+a.tip:hover span { 
+    display: block;
+    position: absolute;
+    z-index: 1000;
+}
+
+/* review page */
+
+.review {
+    grid-column-start: 2;
+    grid-row-start: 4;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    background-color: white;
+    opacity: 0.9;
+}
+
+h2 {
+    font-family: "Harlow Solid Regular";
+    font-size: 3rem;
+    padding-left: 20px;
+}
+
+p, p2 {
+    font-family: "Roboto Regular";
+    font-size: 1.2rem;
+}
+
+.description {
+    max-width: 150px;
+    float: left;
+}
+
+#small {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+p3 {
+    font-size: 3rem;
+}
+.next {
+    float: right;
+    font-size: 3rem;
+}
+
+.back {
+    float: left;
+    font-family: "Harlow Solid Regular";
+}
+
+.backtip {
+    font-size: 1.2rem;
+}
+
+
+@font-face {
+    font-family: "Harlow Plain Regular";
+    src: url(Harlow\ Plain\ Regular.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url(Roboto-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url(Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Harlow Solid Regular";
+    src: url(Harlow\ Solid\ Regular.ttf) format("truetype");
+}
+
+/* love ya */
+
+.heart {
+    grid-column-start: 2;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 35px;
+    gap: 50px 0px;
+    opacity: 0.9;
+}
+
+.jammie {
+    max-width: 60px;
+    opacity: 0;
+}
+
+#one {
+    grid-row-start: 1;
+    grid-column-start: 4;
+    animation: scale 1s forwards;
+    animation-delay: 4s;
+}
+
+#two {
+    grid-row-start: 1;
+    grid-column-start: 6;
+    animation: scale 1s forwards;
+    animation-delay: 4s;
+}
+
+#three {
+    grid-row-start: 2;
+    grid-column-start: 3;
+    animation: scale 1s forwards;
+    animation-delay: 5s;
+}
+
+#four {
+    grid-row-start: 2;
+    grid-column-start: 5;
+    animation: scale 1s forwards;
+    animation-delay: 3s;
+}
+
+#five {
+    grid-row-start: 2;
+    grid-column-start: 7;
+    animation: scale 1s forwards;
+    animation-delay: 5s;
+}
+
+#six {
+    grid-row-start: 3;
+    grid-column-start: 3;
+    animation: scale 1s forwards;
+    animation-delay: 5s;
+}
+
+#seven {
+    grid-row-start: 3;
+    grid-column-start: 7;
+    animation: scale 1s forwards;
+    animation-delay: 5s;
+}
+
+#eight {
+    grid-row-start: 4;
+    grid-column-start: 4;
+    animation: scale 1s forwards;
+    animation-delay: 4s;
+}
+
+#nine {
+    grid-row-start: 4;
+    grid-column-start: 6;
+    animation: scale 1s forwards;
+    animation-delay: 4s;
+}
+
+#ten {
+    grid-row-start: 5;
+    grid-column-start: 5;
+    animation: scale 1s forwards;
+    animation-delay: 3s;
+}
+
+@keyframes scale{
+    0% {opacity: 1; transform: scale(0,0) rotate(0deg);}
+    100% { opacity: 1; transform: scale(1,1) rotate(720deg);}
+}
+
+/* ginger snaps */
+
+.woof {
+    max-width: 50px;
+    grid-column-start: 2;
+    padding-bottom: 70px;
+    justify-self: end;
+    opacity: 0;
+    animation: steam 3s infinite;
+    animation-delay: 7s;
+}
+
+.ginge {
+    max-width: 200px;
+    grid-column-start: 3;
+    opacity: 0;
+    animation: hello 0.7s forwards;
+    animation-delay: 5s;
+}
+
+.speech {
+    grid-column-start: 4;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1em;
+    padding-top: 100px;
+    opacity: 0;
+    animation: appear 1s forwards;
+    animation-delay: 9s
+}
+
+@keyframes hello{
+    0% {opacity: 1; transform: scale(0,1);}
+    70% {opacity: 1; transform: scale(1.15,1);}
+    100% {opacity: 1; transform: scale(1,1)}
+}
+
+/* contact */
+
+.telephone {
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+}
