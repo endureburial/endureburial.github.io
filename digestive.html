@@ -1,0 +1,116 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Digest This&excl; </title>
+<link href="style2.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/png" href="digestive.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<base href="file:///C:/Users/Emma/Documents/Work/biscuit%20website/random.html">
+</head>
+
+<script language="JavaScript">
+    
+    var links = new Array(1) 
+    links[0] = "love-ya.html"
+    links[1] = "ginger-snaps.html"
+    links[2] = "love-ya.html"  
+    function go() { 
+    var a = 1+Math.round(Math.random()*1) 
+    var i = a 
+    location = links[i]
+    } 
+    // -- End Hiding Here -->
+    
+</script>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html">
+                <h1>Digest This!</h1>
+                <img src="images/steam-01.png" class="steam"/>
+                <img src="images/cup.svg" class="cup"/>
+            </a>
+        </div>
+        <div class="nav" id="myTopnav">
+            <ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="dropdown">
+                <a href="index.html">
+                    <img src="images/circle.svg" class="circle1"/>
+                    <img src="images/circle.svg" class="circle2"/>
+                    <img src="images/circle.svg" class="circle3"/>
+                    <li>HOME</li>
+                </a>
+                <a href="biscuits.html">
+                    <img src="images/circle.svg" class="circle1"/>
+                    <img src="images/circle.svg" class="circle2"/>
+                    <img src="images/circle.svg" class="circle3"/>
+                    <li>BISCUITS</li>
+                </a>
+                <a href="about.html">
+                    <img src="images/circle.svg" class="circle1"/>
+                    <img src="images/circle.svg" class="circle2"/>
+                    <img src="images/circle.svg" class="circle3"/>
+                    <li>ABOUT</li>
+                </a>
+                <a href="contact.html">
+                    <img src="images/circle.svg" class="circle1"/>
+                    <img src="images/circle.svg" class="circle2"/>
+                    <img src="images/circle.svg" class="circle3"/>
+                    <li>CONTACT</li>
+                </a>
+                </div>
+                <a href="javascript:go()" id="random">
+                    <li class="button">RANDOM</li>
+                </a>
+            </ul>
+        </div>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "nav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "nav";
+                }
+            }
+        </script>
+        
+        <div class="space"></div>
+
+        <div class="review">
+            <h2>Digestive</h2>
+            <img src="digestive-front.png" class="description" id="small">
+            <p>
+                    A Classic Biscuit. Digestives are top of the tier in the biscuit canon. Are they good for your digestion? No. Were they ever? No. They were originally believed to have antacid properties from the large of amount of sodium bicarbonate in them. Unfortunately, once the biscuits are cooked the baking soda loses carbon dioxide through the heat and becomes sodium carbonate, which doesn’t have the same health benefits on digestion.
+            </p>
+            <p2>    
+                    They seem like the oldest biscuit in many ways, not just because of their stale, granddaddy-like texture, but because they are the <i>default</i> biscuit. They are neutral, ubiquitous, patriotic. They might not be the first choice, but no sane and moral individual could <em>reject</em> a Digestive. They do not discriminate; they do not condescend. Digestives are what come to mind when, in the throes of chaos and indecision, you must blurt out with veined temple and bleeding eyes the one and only biscuit you can think of.
+            </p2>
+            <br/>
+            <br/>
+            <p3>
+                <a href="biscuits.html" title="Back to the Biscuit Tin">
+                    &#171;
+                </a>
+                <div class="next">
+                    <a href="fig-rolls.html">&#8592;</a>
+                    <a href="garibaldi.html">&#8594;</a>
+                </div>
+            </p3>
+            <br/>
+        </div>
+
+        <footer class="footer"></footer>
+    
+    </div>
+
+</body>
+
+</html>
