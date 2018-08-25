@@ -1,0 +1,127 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Digest This&excl; </title>
+<link href="style2.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/png" href="digestive.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<base href="endureburial.github.io">
+</head>
+
+<script language="JavaScript">
+    
+    var links = new Array(4) 
+    links[0] = "love-ya.html"
+    links[1] = "ginger-snaps.html"
+    links[2] = "love-ya.html"
+    links[3] = "nice-day.html"
+    links[4] = "biscuit-base.html"
+    function go() { 
+    var a = 1+Math.round(Math.random()*4) 
+    var i = a 
+    location = links[i]
+    } 
+    // -- End Hiding Here -->
+    
+</script>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html">
+                <h1>Digest This!</h1>
+                <img src="images/steam-01.png" class="steam"/>
+                <img src="images/cup.svg" class="cup"/>
+            </a>
+        </div>
+        <div class="nav" id="myTopnav">
+            <ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="dropdown">
+                <a href="index.html">
+                    <img src="images/circle.svg" class="circle1"/>
+                    <img src="images/circle.svg" class="circle2"/>
+                    <img src="images/circle.svg" class="circle3"/>
+                    <li>HOME</li>
+                </a>
+                <a href="biscuits.html">
+                    <img src="images/circle.svg" class="circle1"/>
+                    <img src="images/circle.svg" class="circle2"/>
+                    <img src="images/circle.svg" class="circle3"/>
+                    <li>BISCUITS</li>
+                </a>
+                <a href="about.html">
+                    <img src="images/circle.svg" class="circle1"/>
+                    <img src="images/circle.svg" class="circle2"/>
+                    <img src="images/circle.svg" class="circle3"/>
+                    <li>ABOUT</li>
+                </a>
+                <a href="contact.html">
+                    <img src="images/circle.svg" class="circle1"/>
+                    <img src="images/circle.svg" class="circle2"/>
+                    <img src="images/circle.svg" class="circle3"/>
+                    <li>CONTACT</li>
+                </a>
+                </div>
+                <a href="javascript:go()" id="random">
+                    <li class="button">RANDOM</li>
+                </a>
+            </ul>
+        </div>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "nav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "nav";
+                }
+            }
+        </script>
+        
+        <div class="space"></div>
+
+        <div class="review">
+            <h2>Jaffa Cake</h2>
+            <img src="jaffa-cake.jpg" class="description" id="small">
+            <p>
+                <q>Ground Control to Commander Briggs: how are things looking up there?</q>
+                <br/>
+                <q>Commander Briggs to Ground Control: things are looking pretty empty. This planet is a barren land. Absolute zero, no detection of life forms. I noticed some backscattered light in the distance and will investigate presently…
+            </p>
+            <p2>
+                <br/>    
+                Commander Briggs to Ground Control: through further investigation, I have found that the backscattered light is most likely to have been a trick of the mind. I traversed the landscape with the abnormality firmly within my sight at all times, but after circling this planet three times I failed to reach it. Thirty-two months have passed since I first caught sight of it. Today, it disappeared completely.
+                <br/>
+                <br/>
+                I walked towards it but never arrived. Four months into the investigation, I became weak and started crawling. Even after food and rest, I still felt incredibly weak. The weakness, I realised, arose from a state of mind rather than a physiological deficit. I crawled for the rest of the investigation which, in turn, took a toll on my body. I am now unable to stand up straight or look up from the ground. In truth, I am completely disfigured. I have spent too much time trying to close distance. I have not seen another living being in over three years. I have not seen my reflection in thirty-one months. I have not heard music or seen beauty since I came to this place. I have not felt joy since I left Earth.
+                <br/>
+                <br/>
+                The distance cannot be closed. The distance between myself and the light. The distance between myself and home, between myself and others. This will be my last transmission.</q>
+            </p2>
+            <br/>
+            <br/>
+            <p3>
+                <a href="biscuits.html" title="Back to the Biscuit Tin">
+                    &#171;
+                </a>
+                <div class="next">
+                    <a href="chocolate-digestive.html">&#8592;</a>
+                    <a href="digestive.html">&#8594;</a>
+                </div>
+            </p3>
+            <br/>
+        </div>
+
+        <footer class="footer"></footer>
+    
+    </div>
+
+</body>
+
+</html>
