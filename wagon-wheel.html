@@ -1,0 +1,117 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Digest This! </title>
+<link href="style2.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/png" href="digestive.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<base href="endureburial.github.io">
+</head>
+
+<script language="JavaScript">
+    
+    var links = new Array(4) 
+    links[0] = "love-ya.html"
+    links[1] = "ginger-snaps.html"
+    links[2] = "love-ya.html"
+    links[3] = "nice-day.html"
+    links[4] = "biscuit-base.html"
+    function go() { 
+    var a = 1+Math.round(Math.random()*4) 
+    var i = a 
+    location = links[i]
+    } 
+    // -- End Hiding Here -->
+    
+</script>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html">
+                <h1>Digest This!</h1>
+                <img src="steam-01.png" class="steam"/>
+                <img src="cup.svg" class="cup"/>
+            </a>
+        </div>
+        <div class="nav" id="myTopnav">
+            <ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="dropdown">
+                <a href="index.html">
+                    <img src="circle.svg" class="circle1"/>
+                    <img src="circle.svg" class="circle2"/>
+                    <img src="circle.svg" class="circle3"/>
+                    <li>HOME</li>
+                </a>
+                <a href="biscuits.html">
+                    <img src="circle.svg" class="circle1"/>
+                    <img src="circle.svg" class="circle2"/>
+                    <img src="circle.svg" class="circle3"/>
+                    <li>BISCUITS</li>
+                </a>
+                <a href="about.html">
+                    <img src="circle.svg" class="circle1"/>
+                    <img src="circle.svg" class="circle2"/>
+                    <img src="circle.svg" class="circle3"/>
+                    <li>ABOUT</li>
+                </a>
+                <a href="contact.html">
+                    <img src="circle.svg" class="circle1"/>
+                    <img src="circle.svg" class="circle2"/>
+                    <img src="circle.svg" class="circle3"/>
+                    <li>CONTACT</li>
+                </a>
+                </div>
+                <a href="javascript:go()" id="random">
+                    <li class="button">RANDOM</li>
+                </a>
+            </ul>
+        </div>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "nav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "nav";
+                }
+            }
+        </script>
+
+        <div class="space"></div>
+
+        <div class="review">
+            <h2>Wagon Wheel</h2>
+            <img src="wagon-wheel.jpg" class="description">
+            <p>
+                <i>Mother.</i> She feeds me. <i>Mother</i> feeds me the things that grow inside her. They trickle like treacle and taste like soft meat. They hang off her skin, gathering weight at the bottom and I pluck them when they’re ripe. Pop them into my mouth and burst the peel with my tooth. I swallow before I chew them up completely. I always swallow before they stop moving.
+            </p>
+            <p2>    
+                After my feeding I lie on my back, bloated and half-conscious, an almost post-coital glow radiating from my cheeks. My throat is quenched, my belly full. I am saturated with the thick blood of <i>Mother’s</i> fruit. They squirm in my stomach; I hear small mousy squeals as they dissolve inside me. Their cries make my ears tingle.
+            </p2>
+            <br/>
+            <br/>
+            <p3>
+               <a href="biscuits.html" title="Back to the Biscuit Tin">
+                    &#171;
+                </a>
+                <div class="next">
+                    <a href="tea-cake.html">&#8592;</a>
+                    <a href="viennese-whirl.html">&#8594;</a>
+                </div>
+            </p3>
+        </div>
+
+        <footer class="footer"></footer>
+    
+    </div>
+
+</body>
+
+</html>
